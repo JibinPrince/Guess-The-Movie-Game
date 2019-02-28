@@ -19,7 +19,7 @@ public class Game {
     // Method that handles user guesses and controls game mechanics
     public void dashedMovieTitle(String randomTitle){
         Scanner guess = new Scanner(System.in);                                 // Create a Scanner object
-        String dashes = randomTitle.replaceAll("\\S", "-");    // Replace random movie title with dashes
+        String dashes = randomTitle.replaceAll("\\S", "-");                     // Replace random movie title with dashes
         char [] titleArray = dashes.toCharArray();                              // Turn String dashed title into character array of title's letters
         String wrongGuesses = "";                                               // Tracks wrongly guessed letters
         int wrong = 0;                                                          // Variable that tracks number of wrong guesses
